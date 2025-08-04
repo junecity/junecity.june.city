@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ProFix Solutions - Professional Handyman Services</title>
+    <title>Junecity Handyman - Professional Handyman Services</title>
     <style>
         * {
             margin: 0;
@@ -42,7 +42,7 @@
         .logo {
             font-size: 1.8rem;
             font-weight: bold;
-            color: #2563eb;
+            color: #a855f7;
             text-decoration: none;
         }
 
@@ -61,7 +61,7 @@
         }
 
         .nav-links a:hover {
-            color: #2563eb;
+            color: #a855f7;
         }
 
         .nav-links a::after {
@@ -71,7 +71,7 @@
             height: 2px;
             bottom: -5px;
             left: 0;
-            background: #2563eb;
+            background: #a855f7;
             transition: width 0.3s ease;
         }
 
@@ -80,7 +80,7 @@
         }
 
         .cta-button {
-            background: linear-gradient(135deg, #2563eb, #3b82f6);
+            background: linear-gradient(135deg, #a855f7, #c084fc);
             color: white;
             padding: 0.75rem 1.5rem;
             border: none;
@@ -94,13 +94,12 @@
 
         .cta-button:hover {
             transform: translateY(-2px);
-            box-shadow: 0 10px 25px rgba(37, 99, 235, 0.3);
+            box-shadow: 0 10px 25px rgba(168, 85, 247, 0.3);
         }
 
         /* Hero Section */
         .hero {
             height: 100vh;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -110,6 +109,16 @@
             overflow: hidden;
         }
 
+        .hero-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -2;
+        }
+
         .hero::before {
             content: '';
             position: absolute;
@@ -117,8 +126,8 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><polygon fill="%23ffffff10" points="0,1000 1000,0 1000,1000"/></svg>');
-            animation: float 20s ease-in-out infinite;
+            background: linear-gradient(135deg, rgba(192, 132, 252, 0.8) 0%, rgba(168, 85, 247, 0.8) 50%, rgba(147, 51, 234, 0.8) 100%);
+            z-index: -1;
         }
 
         @keyframes float {
@@ -207,7 +216,7 @@
             left: -100%;
             width: 100%;
             height: 3px;
-            background: linear-gradient(90deg, #2563eb, #3b82f6);
+            background: linear-gradient(90deg, #a855f7, #c084fc);
             transition: left 0.3s ease;
         }
 
@@ -223,7 +232,7 @@
         .service-icon {
             width: 60px;
             height: 60px;
-            background: linear-gradient(135deg, #2563eb, #3b82f6);
+            background: linear-gradient(135deg, #a855f7, #c084fc);
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -278,7 +287,7 @@
         .stat-number {
             font-size: 2rem;
             font-weight: bold;
-            color: #2563eb;
+            color: #a855f7;
         }
 
         .stat-label {
@@ -349,7 +358,7 @@
         .contact-icon {
             width: 40px;
             height: 40px;
-            background: rgba(37, 99, 235, 0.3);
+            background: rgba(168, 85, 247, 0.3);
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -414,7 +423,7 @@
 <body>
     <header>
         <nav>
-            <a href="#" class="logo">ProFix Solutions</a>
+            <a href="#" class="logo">Junecity Handyman</a>
             <ul class="nav-links">
                 <li><a href="#services">Services</a></li>
                 <li><a href="#about">About</a></li>
@@ -425,6 +434,11 @@
     </header>
 
     <section class="hero">
+        <video class="hero-video" autoplay muted loop playsinline>
+            <source src="https://cdn.pixabay.com/vimeo/265824932/handyman-14226.mp4?width=1280&hash=efcdac2cfd4d73ae1b6d27a5a08978b5096df9d3" type="video/mp4">
+            <!-- Fallback for browsers that don't support video -->
+            Your browser does not support the video tag.
+        </video>
         <div class="hero-content">
             <h1>Professional Handyman Services</h1>
             <p>Quality repairs, installations, and maintenance for your home and business. Licensed, insured, and trusted by hundreds of satisfied customers.</p>
@@ -449,9 +463,9 @@
                     <p>From leaky faucets to pipe installations, we handle all your plumbing needs with precision and reliability.</p>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">⚡</div>
-                    <h3>Electrical Work</h3>
-                    <p>Safe and certified electrical installations, repairs, and upgrades for residential and commercial properties.</p>
+                    <div class="service-icon">🔲</div>
+                    <h3>Tile Repair</h3>
+                    <p>Expert tile installation, repair, and restoration for bathrooms, kitchens, and flooring projects.</p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">🏠</div>
@@ -481,7 +495,7 @@
         <div class="container">
             <div class="about-content">
                 <div class="about-text">
-                    <h2>Why Choose ProFix Solutions?</h2>
+                    <h2>Why Choose Junecity Handyman?</h2>
                     <p>With over 15 years of experience in the industry, we've built our reputation on quality workmanship, reliability, and exceptional customer service.</p>
                     <p>Our team of licensed professionals is equipped with the latest tools and techniques to handle any job, big or small. We're committed to getting it right the first time, every time.</p>
                     <p>From emergency repairs to planned renovations, we're your trusted partner for all handyman services.</p>
@@ -546,7 +560,7 @@
                         <div class="contact-icon">📧</div>
                         <div>
                             <strong>Email</strong><br>
-                            info@profixsolutions.com
+                            info@junecityhandyman.com
                         </div>
                     </div>
                     <div class="contact-item">
@@ -572,7 +586,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 ProFix Solutions. All rights reserved. Licensed, Bonded & Insured.</p>
+            <p>&copy; 2025 Junecity Handyman. All rights reserved. Licensed, Bonded & Insured.</p>
         </div>
     </footer>
 
