@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Junecity Handyman - Your Local Home Improvement Expert</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter for general text, and a script-like font for the logo -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f8f8; /* Light gray background */
+        }
+        .hero-background {
+            /* Updated placeholder image with a purple tint */
+            background-image: url('https://placehold.co/1920x800/8b5cf6/ffffff?text=Professional+Handyman+Services');
+            background-size: cover;
+            background-position: center;
+        }
+        .loading-spinner {
+            border: 4px solid rgba(0, 0, 0, 0.1);
+            border-left-color: #8b5cf6;
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            animation: spin 1s linear infinite;
+            display: none; /* Hidden by default */
+        }
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        /* Custom font for the "junecity" part of the logo */
+        .logo-junecity {
+            font-family: 'Dancing Script', cursive;
+            font-weight: 700; /* Bold */
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md py-4">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <!-- Logo - Replaced text with SVG -->
+            <a href="#" class="text-2xl font-bold text-purple-600 rounded-md p-2 flex items-center">
+                <svg width="200" height="70" viewBox="0 0 200 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- "junecity" text with a script-like font -->
+                    <!-- Adjusted x to ensure 'J' is fully visible -->
+                    <text x="15" y="35" fill="#8b5cf6" font-size="36" class="logo-junecity">junecity</text>
+                    <!-- "Handyman" text -->
+                    <!-- Adjusted x to center it visually under "junecity" -->
+                    <text x="25" y="65" fill="#4a5568" font-size="22" font-weight="600" font-family="Inter, sans-serif">Handyman</text>
+                </svg>
+            </a>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#home" class="text-gray-600 hover:text-purple-600 transition duration-300 rounded-md p-2">Home</a></li>
+                    <li><a href="#services" class="text-gray-600 hover:text-purple-600 transition duration-300 rounded-md p-2">Services</a></li>
+                    <li><a href="#about" class="text-gray-600 hover:text-purple-600 transition duration-300 rounded-md p-2">About Us</a></li>
+                    <li><a href="#contact" class="text-gray-600 hover:text-purple-600 transition duration-300 rounded-md p-2">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-background text-white py-20 md:py-32 lg:py-48 flex items-center justify-center text-center">
+        <div class="bg-black bg-opacity-50 p-8 rounded-lg max-w-3xl mx-4">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4 leading-tight">Your Trusted Partner for Home Repairs & Improvements</h1>
+            <p class="text-lg md:text-xl mb-8">Serving Junecity and surrounding areas with reliable, high-quality handyman services.</p>
+            <a href="#contact" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105">Get a Free Quote</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center text-gray-900 mb-12">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service Item 1 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <h3 class="text-2xl font-semibold text-purple-600 mb-3">General Home Repairs</h3>
+                    <p class="text-gray-700">From leaky faucets to squeaky doors, we handle all types of minor and major home repairs efficiently.</p>
+                </div>
+                <!-- Service Item 2 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <h3 class="text-2xl font-semibold text-purple-600 mb-3">Painting & Drywall</h3>
+                    <p class="text-gray-700">Expert interior and exterior painting, drywall repair, and patching for a fresh new look.</p>
+                </div>
+                <!-- Service Item 3 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <h3 class="text-2xl font-semibold text-purple-600 mb-3">Fixture Installation</h3>
+                    <p class="text-gray-700">Installation of light fixtures, ceiling fans, shelves, blinds, and other home accessories.</p>
+                </div>
+                <!-- Service Item 4 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <h3 class="text-2xl font-semibold text-purple-600 mb-3">Minor Plumbing & Electrical</h3>
+                    <p class="text-gray-700">Fixing minor plumbing issues, replacing outlets, switches, and other small electrical tasks.</p>
+                </div>
+                <!-- Service Item 5 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <h3 class="2xl font-semibold text-purple-600 mb-3">Deck & Fence Repair</h3>
+                    <p class="text-gray-700">Repairing and maintaining decks, fences, and outdoor structures to keep them looking great.</p>
+                </div>
+                <!-- Service Item 6 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <h3 class="text-2xl font-semibold text-purple-600 mb-3">Odd Jobs & More</h3>
+                    <p class="text-gray-700">Don't see what you need? Just ask! We're here for all your household odd jobs and custom requests.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-purple-600 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-8">About Junecity Handyman</h2>
+            <div class="max-w-3xl mx-auto">
+                <p class="text-lg leading-relaxed mb-4">
+                    At Junecity Handyman, we are dedicated to providing top-notch, reliable, and affordable home repair and improvement services to the Junecity community. With years of experience, we pride ourselves on our attention to detail, professionalism, and commitment to customer satisfaction.
+                </p>
+                <p class="text-lg leading-relaxed">
+                    Whether it's a small fix or a larger renovation project, you can trust us to get the job done right, on time, and within budget. We treat every home as if it were our own, ensuring quality craftsmanship and a seamless experience for our clients.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center text-gray-900 mb-12">Get In Touch</h2>
+            <div class="max-w-2xl mx-auto bg-gray-50 p-8 rounded-lg shadow-md">
+                <!-- Project Scope Assistant -->
+                <div class="mb-8 p-6 bg-purple-100 rounded-lg border border-purple-200">
+                    <h3 class="text-2xl font-semibold text-purple-800 mb-4 text-center">✨ Project Scope Assistant ✨</h3>
+                    <p class="text-gray-700 mb-4 text-center">Describe your home repair or improvement need, and our AI assistant will suggest common tasks or considerations to help you articulate your request.</p>
+                    <textarea id="project-description" rows="4" class="mt-1 block w-full px-4 py-2 border border-purple-300 rounded-md shadow-sm focus:ring-purple-500 focus:border-purple-500 sm:text-sm" placeholder="e.g., My kitchen sink is leaking, I want to repaint my living room, My fence needs repair..."></textarea>
+                    <button id="get-suggestions-btn" class="mt-4 w-full bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-4 rounded-md shadow-lg transition duration-300 transform hover:scale-105 flex items-center justify-center">
+                        Get Suggestions
+                        <div id="loading-spinner" class="loading-spinner ml-2"></div>
+                    </button>
+                    <div id="suggestions-output" class="mt-4 p-4 bg-white rounded-md border border-gray-200 text-gray-800 hidden">
+                        <p class="font-semibold mb-2">Suggested Scope:</p>
+                        <div id="suggestions-text"></div>
+                    </div>
+                    <div id="error-message" class="mt-4 p-3 bg-red-100 border border-red-300 text-red-700 rounded-md hidden"></div>
+                </div>
+
+                <form action="#" method="POST" class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                        <input type="text" id="name" name="name" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-purple-500 focus:border-purple-500 sm:text-sm" placeholder="Your Name" required>
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                        <input type="email" id="email" name="email" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-purple-500 focus:border-purple-500 sm:text-sm" placeholder="your@example.com" required>
+                    </div>
+                    <div>
+                        <label for="phone" class="block text-sm font-medium text-gray-700">Phone (Optional)</label>
+                        <input type="tel" id="phone" name="phone" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-purple-500 focus:border-purple-500 sm:text-sm" placeholder="(123) 456-7890">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                        <textarea id="message" name="message" rows="5" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-purple-500 focus:border-purple-500 sm:text-sm" placeholder="Tell us about your project or inquiry..." required></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" class="w-full bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-4 rounded-md shadow-lg transition duration-300 transform hover:scale-105">Send Message</button>
+                    </div>
+                </form>
+                <div class="text-center mt-8 text-gray-700">
+                    <p>Or call us directly:</p>
+                    <p class="text-xl font-semibold text-purple-600 mt-2">(123) 456-7890</p>
+                    <p class="mt-2">Email: <a href="mailto:info@junecity.com" class="text-purple-600 hover:underline">info@junecity.com</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2024 Junecity Handyman. All rights reserved.</p>
+            <div class="flex justify-center space-x-6 mt-4">
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300">Facebook</a>
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300">Instagram</a>
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const projectDescriptionInput = document.getElementById('project-description');
+            const getSuggestionsBtn = document.getElementById('get-suggestions-btn');
+            const suggestionsOutput = document.getElementById('suggestions-output');
+            const suggestionsText = document.getElementById('suggestions-text');
+            const loadingSpinner = document.getElementById('loading-spinner');
+            const errorMessageDiv = document.getElementById('error-message');
+
+            getSuggestionsBtn.addEventListener('click', async () => {
+                const prompt = projectDescriptionInput.value.trim();
+                if (!prompt) {
+                    displayMessage('Please enter a description of your project.', 'error');
+                    return;
+                }
+
+                suggestionsOutput.classList.add('hidden');
+                errorMessageDiv.classList.add('hidden');
+                suggestionsText.innerHTML = '';
+                loadingSpinner.style.display = 'block'; // Show spinner
+                getSuggestionsBtn.disabled = true; // Disable button
+
+                let chatHistory = [];
+                chatHistory.push({
+                    role: "user",
+                    parts: [{
+                        text: `A customer describes a home repair or improvement need. Suggest common tasks or considerations for this type of project, helping them articulate their request better. Keep it concise, actionable, and formatted with bullet points if applicable. Customer's description: ${prompt}`
+                    }]
+                });
+
+                const payload = { contents: chatHistory };
+                const apiKey = ""; // Canvas will automatically provide this in runtime
+                const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
+
+                const maxRetries = 5;
+                let retryCount = 0;
+                let delay = 1000; // 1 second
+
+                while (retryCount < maxRetries) {
+                    try {
+                        const response = await fetch(apiUrl, {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify(payload)
+                        });
+
+                        if (!response.ok) {
+                            // If response is not OK, it might be a rate limit or other server error
+                            throw new Error(`HTTP error! status: ${response.status}`);
+                        }
+
+                        const result = await response.json();
+
+                        if (result.candidates && result.candidates.length > 0 &&
+                            result.candidates[0].content && result.candidates[0].content.parts &&
+                            result.candidates[0].content.parts.length > 0) {
+                            const text = result.candidates[0].content.parts[0].text;
+                            suggestionsText.innerHTML = text.replace(/\n/g, '<br>'); // Display text, preserving newlines
+                            suggestionsOutput.classList.remove('hidden');
+                            break; // Exit loop on success
+                        } else {
+                            displayMessage('No suggestions found. Please try again with a different description.', 'error');
+                            break; // Exit loop if no candidates or content
+                        }
+                    } catch (error) {
+                        console.error('Error fetching suggestions:', error);
+                        if (retryCount < maxRetries - 1) {
+                            console.log(`Retrying in ${delay / 1000} seconds...`);
+                            await new Promise(res => setTimeout(res, delay));
+                            delay *= 2; // Exponential backoff
+                            retryCount++;
+                        } else {
+                            displayMessage('Failed to get suggestions after multiple retries. Please try again later.', 'error');
+                            break; // Exit loop after max retries
+                        }
+                    } finally {
+                        loadingSpinner.style.display = 'none'; // Hide spinner
+                        getSuggestionsBtn.disabled = false; // Re-enable button
+                    }
+                }
+            });
+
+            function displayMessage(message, type) {
+                if (type === 'error') {
+                    errorMessageDiv.textContent = message;
+                    errorMessageDiv.classList.remove('hidden');
+                } else {
+                    // For other message types, if needed in the future
+                }
+            }
+        });
+    </script>
+</body>
+</html>
